@@ -17,34 +17,27 @@
 
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand navbar-light bg-dark">
-    <a class="navbar-brand" href="#">
-        <img src="#" width="62" height="48" alt="logo-abura">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Opções
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Nome</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Nome</a>
-                </div>
-            </li>
-        </ul>   
-    </div>
-    <a href="#"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">ENTRAR</button></a>
-</nav>
-<!-- FIM NAVIGATION -->
+        <a class="navbar-brand" href="#">
+            <img src="#" width="62" height="48" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand text-white" href="#">Metstars</a>
+            </ul>   
+        </div>
+        <a href="#"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">ENTRAR</button></a>
+    </nav>
+    <!-- FIM NAVIGATION -->
 
     <header>
-        <h1>Eleições</h1>
+        <h1 class="text-center mt-5 mb-3">Eleições Ativas</h1>
     </header>
-    <main>
-        conteudo
+
+    <main class="text-center mx-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut ipsum repellat dicta ex, provident praesentium libero dolor soluta autem explicabo error deleniti quasi necessitatibus, magnam in alias qui. Hic.
     </main>
-    <footer>
+
+    <footer class="text-center mt-5 bg-dark text-white">
         footer
     </footer>
     
