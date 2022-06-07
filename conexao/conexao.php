@@ -3,7 +3,7 @@
 $host = "localhost";
 $usuario = "root";
 $senha = "usbw";
-$bd = "db_metastars";
+$bd = "db_metstars";
 
 $mysqli = new mysqli($host, $usuario, $senha, $bd);
 
