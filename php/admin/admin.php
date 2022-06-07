@@ -52,7 +52,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
 
     <!-- Modal de Cadastro -->
     <div class="modal fade" id="completeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content p-5">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Adicionar Candidato</h5>
@@ -61,7 +61,6 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                     </button>
                 </div>
                 <div class="modal-body">
-
                     <div class="form-group">
                         <label for="rm">RM</label>
                         <input type="number" class="form-control" id="rm" placeholder="RM do candidato">
@@ -74,53 +73,43 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                     <label for="dtnasc">Data de nascimento</label>
                     <input type="date" class="form-control" id="dtnasc" placeholder="Data de nascimento">
                     </div>
-                    <div class="form-group">
-                        <label for="turma">Turma</label>
-                        <input type="text" class="form-control" id="turma" placeholder="Turma">
-                    </div>
-                    <div class="form-group">
-                        <label for="representSala">Representante de sala</label>
-                        <input type="text" class="form-control" id="representSala" placeholder="Representante de sala">
-                    </div>
-                    <div class="form-group">
-                        <label for="cargoGremio">Cargo do gremio</label>
-                        <input type="text" class="form-control" id="cargoGremio" placeholder="Cargo do gremio">
+                    <div class="input-group my-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="turma">Turma</label>
+                        </div>
+                        <select class="custom-select" id="turma">
+                            <option selected></option>
+                            <option>1ds</option>
+                            <option>1adm</option>
+                            <option>1min</option>
+                            <option>1mad</option>
+                            <option>1mam</option>
+                            <option>2ds</option>
+                            <option>2adm</option>
+                            <option>2min</option>
+                            <option>2mad</option>
+                            <option>2mam</option>
+                            <option>3ds</option>
+                            <option>3adm</option>
+                            <option>3min</option>
+                            <option>3mad</option>
+                            <option>3mam</option>
+                        </select>
+                    </div>  
+                    <div class="input-group my-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="representSala">Representante</label>
+                        </div>
+                        <select class="custom-select" id="representSala">
+                            <option selected></option>
+                            <option>representante</option>
+                            <option>vice-representante</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="proposta">Propostas</label>
                         <textarea class="form-control" rows="3" id="proposta"></textarea>
                     </div>
-
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="">Representante</label>
-                        </div>
-                        <select class="custom-select" id="">
-                            <option selected></option>
-                            <?php
-                                $sql = mysqli_query($mysqli, "SELECT * FROM tb_candidato");
-                                while ($row = mysqli_fetch_assoc($sql)) {
-                                    echo "<option>".$row['nm_candidato']."</option>";
-                                }   
-                            ?>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="">Gremio</label>
-                        </div>
-                        <select class="custom-select" id="">
-                            <option selected></option>
-                            <?php
-                                $sql = mysqli_query($mysqli, "SELECT * FROM tb_candidato");
-                                while ($row = mysqli_fetch_assoc($sql)) {
-                                    echo "<option>".$row['ds_cargo_gremio']."</option>";
-                                }   
-                            ?>
-                        </select>
-                    </div>
-
                 </div>
                 <div class="modal-footer mx-auto mt-3">
                     <button type="button" class="btn btn-dark" onclick="adduma()">Salvar</button>
@@ -133,7 +122,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
 
     <!-- Modal de Edição -->
     <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content p-5">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Editar Dados do Candidato</h5>
@@ -142,36 +131,55 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                     </button>
                 </div>
                 <div class="modal-body">
-
-                <div class="form-group">
-                    <label for="updaterm">RM</label>
-                    <input type="text" class="form-control" id="updaterm" placeholder="RM do candidato">
-                </div>
-                <div class="form-group">
-                    <label for="updatenome">Nome</label>
-                    <input type="text" class="form-control" id="updatenome" placeholder="Chassi do veículo">
-                </div>
-                <div class="form-group">
-                    <label for="updatedtnasc">Data de nascimento</label>
-                    <input type="text" class="form-control" id="updatedtnasc" placeholder="Ano de fabricação">
-                </div>
-                <div class="form-group">
-                    <label for="updateturma">Turma</label>
-                    <input type="text" class="form-control" id="updateturma" placeholder="Tipo da ambulância">
-                </div>
-                <div class="form-group">
-                    <label for="updaterepresentSala">Representante de Sala</label>
-                    <input type="text" class="form-control" id="updaterepresentSala" placeholder="Tipo da ambulância">
-                </div>
-                <div class="form-group">
-                    <label for="updatecargoGremio">Cargo do gremio</label>
-                    <input type="text" class="form-control" id="updatecargoGremio" placeholder="Tipo da ambulância">
-                </div>
-                <div class="form-group">
-                    <label for="updateproposta">Propostas</label>
-                    <input type="text" class="form-control" id="updateproposta" placeholder="Tipo da ambulância">
-                </div>
-
+                    <div class="form-group">
+                        <label for="updaterm">RM</label>
+                        <input type="text" class="form-control" id="updaterm" placeholder="RM do candidato">
+                    </div>
+                    <div class="form-group">
+                        <label for="updatenome">Nome</label>
+                        <input type="text" class="form-control" id="updatenome" placeholder="Chassi do veículo">
+                    </div>
+                    <div class="form-group">
+                        <label for="updatedtnasc">Data de nascimento</label>
+                        <input type="text" class="form-control" id="updatedtnasc" placeholder="Ano de fabricação">
+                    </div>
+                    <div class="input-group my-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="updateturma">Turma</label>
+                        </div>
+                        <select class="custom-select" id="updateturma">
+                            <option selected></option>
+                            <option>1ds</option>
+                            <option>1adm</option>
+                            <option>1min</option>
+                            <option>1mad</option>
+                            <option>1mam</option>
+                            <option>2ds</option>
+                            <option>2adm</option>
+                            <option>2min</option>
+                            <option>2mad</option>
+                            <option>2mam</option>
+                            <option>3ds</option>
+                            <option>3adm</option>
+                            <option>3min</option>
+                            <option>3mad</option>
+                            <option>3mam</option>
+                        </select>
+                    </div>  
+                    <div class="input-group my-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="updaterepresentSala">Representante</label>
+                        </div>
+                        <select class="custom-select" id="updaterepresentSala">
+                            <option selected></option>
+                            <option>representante</option>
+                            <option>vice-representante</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateproposta">Propostas</label>
+                        <textarea class="form-control" rows="3" id="updateproposta"></textarea>
+                    </div>
                 </div>
                 <div class="modal-footer mx-auto mt-3">
                     <button type="button" class="btn btn-dark" onclick="updateDetails()">Alterar</button>
@@ -217,7 +225,6 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
           var dtnascAdd=$('#dtnasc').val();
           var turmaAdd=$('#turma').val();
           var representSalaAdd=$('#representSala').val();
-          var cargoGremioAdd=$('#cargoGremio').val();
           var propostaAdd=$('#proposta').val();
 
           $.ajax({
@@ -229,13 +236,19 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 dtnascSend: dtnascAdd,
                 turmaSend: turmaAdd,
                 representSalaSend: representSalaAdd,
-                cargoGremioSend: cargoGremioAdd,
                 propostaSend: propostaAdd,
             },
             success: function (data,status) {
                 //console.log(status);
                 $('#completeModal').modal('hide');
                 displayData();
+
+                $(document).ready(function() {
+                    $('.modal').on('hidden.bs.modal', function() {
+                        $(this).find('input').val('');
+                        $(this).find('select').val(''); 
+                    });
+                });
             }
           });
         }
@@ -264,7 +277,6 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 $('#updatedtnasc').val(candid.dt_nasc);
                 $('#updateturma').val(candid.nm_turma);
                 $('#updaterepresentSala').val(candid.ds_representante_sala);
-                $('#updatecargoGremio').val(candid.ds_cargo_gremio);
                 $('#updateproposta').val(candid.ds_proposta);
             });
 
@@ -278,7 +290,6 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
             var updatedtnasc = $('#updatedtnasc').val();
             var updateturma = $('#updateturma').val();
             var updaterepresentSala = $('#updaterepresentSala').val();
-            var updatecargoGremio = $('#updatecargoGremio').val();
             var updateproposta = $('#updateproposta').val();
             var hiddendata = $('#hiddendata').val();
 
@@ -288,7 +299,6 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 updatedtnasc: updatedtnasc,
                 updateturma: updateturma,
                 updaterepresentSala: updaterepresentSala,
-                updatecargoGremio: updatecargoGremio,
                 updateproposta: updateproposta,
                 hiddendata: hiddendata,
             },function(data, status) {

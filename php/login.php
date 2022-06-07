@@ -19,10 +19,10 @@
 	                $_SESSION['senha'] = $linha->ds_senha;
 	                $_SESSION['cargo'] = $linha->ds_cargo;
 	    
-	                if ($linha->ds_cargo == "Aluno") { 
+	                if ($linha->ds_cargo == "aluno") { 
 	                    ?> <script> window.location.href = "eleitor/eleitor.php"; </script> <?php
 
-	                } elseif ($linha->ds_cargo == "Coordenador") {
+	                } elseif ($linha->ds_cargo == "coordenador") {
 	                	?> <script> window.location.href = "admin/admin.php"; </script> <?php
 
 	                } else {

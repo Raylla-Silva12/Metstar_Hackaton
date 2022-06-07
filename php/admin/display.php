@@ -13,7 +13,7 @@ if (isset($_POST['displaySend'])) {
         $nome = $row['nm_candidato'];
         $dtnasc = $row['dt_nasc'];
         $turma = $row['nm_turma'];
-        $representSala = $row['ds_representant_sala'];
+        $representSala = $row['ds_representante_sala'];
         $cargoGremio = $row['ds_cargo_gremio'];
         $proposta = $row['ds_proposta'];
         $voto = $row['nr_voto'];

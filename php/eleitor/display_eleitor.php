@@ -10,7 +10,7 @@ if (isset($_POST['displaySend'])) {
     while ($row = mysqli_fetch_assoc($result)) {
         $nome = $row['nm_candidato'];
         $turma = $row['nm_turma'];
-        $representSala = $row['ds_representant_sala'];
+        $representSala = $row['ds_representante_sala'];
         $cargoGremio = $row['ds_cargo_gremio'];
         $proposta = $row['ds_proposta'];
         $container .= '
@@ -20,8 +20,7 @@ if (isset($_POST['displaySend'])) {
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body text-info">
-                <h5 class="card-title">Candidato</h5>
-                <p class="card-text">'.$nome.'</p>
+                <h5 class="card-title">'.$nome.'</h5>
                 <p class="card-text">'.$turma.'</p>
                 <p class="card-text">'.$representSala.'</p>
                 <p class="card-text">'.$cargoGremio.'</p>
