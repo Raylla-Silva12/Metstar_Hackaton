@@ -15,6 +15,38 @@
 </head>
 <body>
 
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand navbar-light bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="#" width="62" height="48" alt="logo-abura">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Opções
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Nome</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Nome</a>
+                </div>
+            </li>
+        </ul>   
+    </div>
+    <a href="#"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">ENTRAR</button></a>
+</nav>
+<!-- FIM NAVIGATION -->
+
+    <header>
+        <h1>Eleições</h1>
+    </header>
+    <main>
+        conteudo
+    </main>
+    <footer>
+        footer
+    </footer>
     
 
     <!-- SCRIPTS -->
