@@ -11,7 +11,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Entrar - Metastars</title>
+    <title>Entrar - Metstars</title>
 </head>
 <body>
 
