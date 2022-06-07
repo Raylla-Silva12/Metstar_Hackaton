@@ -6,6 +6,11 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
 	unset($_SESSION['senha']);
 	header('Location: ../../index.php');
 }
+
+if (isset($_SSESION['msg'])) {
+    unset($_SESSION['msg']);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +40,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 <a class="navbar-brand text-white" href="#">Metstars</a>
             </ul>   
         </div>
-        <a href="../../conexao/encerrar_sessao.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SAIR</button></a>
+        <a href="../encerrar_sessao.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SAIR</button></a>
     </nav>
     <!-- FIM NAVIGATION -->
 

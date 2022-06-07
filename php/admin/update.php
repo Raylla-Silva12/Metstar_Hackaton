@@ -1,5 +1,5 @@
 <?php
-include '../../conexao/conexao.php';
+include('../../conexao/conexao.php');
 
 if (isset($_POST['updateid'])) {
     $cand_id = $_POST['updateid'];

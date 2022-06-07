@@ -1,5 +1,5 @@
 <?php
-include '../../conexao/conexao.php';
+include_once('../../conexao/conexao.php');
 
 if (isset($_POST['displaySend'])) {
     $container='<div class="div-table mb-5">';
@@ -26,8 +26,7 @@ if (isset($_POST['displaySend'])) {
                 <p class="card-text">'.$representSala.'</p>
                 <p class="card-text">'.$cargoGremio.'</p>
                 <p class="card-text">'.$proposta.'</p>
-                <p class="card-text"></p>
-                
+                <a href="votar.php?cd='.$row['cd_candidato'].'">Votar</a>
               </div>
             </div>
           </div>

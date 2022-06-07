@@ -38,7 +38,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 <a class="navbar-brand text-white" href="#">Metstars</a>
             </ul>   
         </div>
-        <a href="../../conexao/encerrar_sessao.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SAIR</button></a>
+        <a href="../encerrar_sessao.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SAIR</button></a>
     </nav>
     <!-- FIM NAVIGATION -->
 
@@ -62,34 +62,64 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 </div>
                 <div class="modal-body">
 
-                <div class="form-group">
-                    <label for="rm">RM</label>
-                    <input type="number" class="form-control" id="rm" placeholder="RM do candidato">
-                </div>
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Nome do candidato">
-                </div>
-                <div class="form-group">
-                <label for="dtnasc">Data de nascimento</label>
-                <input type="date" class="form-control" id="dtnasc" placeholder="Data de nascimento">
-                </div>
-                <div class="form-group">
-                    <label for="turma">Turma</label>
-                    <input type="text" class="form-control" id="turma" placeholder="Turma">
-                </div>
-                <div class="form-group">
-                    <label for="representSala">Representante de sala</label>
-                    <input type="text" class="form-control" id="representSala" placeholder="Representante de sala">
-                </div>
-                <div class="form-group">
-                    <label for="cargoGremio">Cargo do gremio</label>
-                    <input type="text" class="form-control" id="cargoGremio" placeholder="Cargo do gremio">
-                </div>
-                <div class="form-group">
-                    <label for="proposta">Propostas</label>
-                    <textarea class="form-control" rows="3" id="proposta"></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="rm">RM</label>
+                        <input type="number" class="form-control" id="rm" placeholder="RM do candidato">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome do candidato">
+                    </div>
+                    <div class="form-group">
+                    <label for="dtnasc">Data de nascimento</label>
+                    <input type="date" class="form-control" id="dtnasc" placeholder="Data de nascimento">
+                    </div>
+                    <div class="form-group">
+                        <label for="turma">Turma</label>
+                        <input type="text" class="form-control" id="turma" placeholder="Turma">
+                    </div>
+                    <div class="form-group">
+                        <label for="representSala">Representante de sala</label>
+                        <input type="text" class="form-control" id="representSala" placeholder="Representante de sala">
+                    </div>
+                    <div class="form-group">
+                        <label for="cargoGremio">Cargo do gremio</label>
+                        <input type="text" class="form-control" id="cargoGremio" placeholder="Cargo do gremio">
+                    </div>
+                    <div class="form-group">
+                        <label for="proposta">Propostas</label>
+                        <textarea class="form-control" rows="3" id="proposta"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="">Representante</label>
+                        </div>
+                        <select class="custom-select" id="">
+                            <option selected></option>
+                            <?php
+                                $sql = mysqli_query($mysqli, "SELECT * FROM tb_candidato");
+                                while ($row = mysqli_fetch_assoc($sql)) {
+                                    echo "<option>".$row['nm_candidato']."</option>";
+                                }   
+                            ?>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="">Gremio</label>
+                        </div>
+                        <select class="custom-select" id="">
+                            <option selected></option>
+                            <?php
+                                $sql = mysqli_query($mysqli, "SELECT * FROM tb_candidato");
+                                while ($row = mysqli_fetch_assoc($sql)) {
+                                    echo "<option>".$row['ds_cargo_gremio']."</option>";
+                                }   
+                            ?>
+                        </select>
+                    </div>
 
                 </div>
                 <div class="modal-footer mx-auto mt-3">

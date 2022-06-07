@@ -1,5 +1,5 @@
 <?php
-include '../../conexao/conexao.php';
+include_once('../../conexao/conexao.php');
 
 if (isset($_POST['displaySend'])) {
     $container='<div class="div-table mb-5">';
@@ -16,6 +16,7 @@ if (isset($_POST['displaySend'])) {
         $representSala = $row['ds_representant_sala'];
         $cargoGremio = $row['ds_cargo_gremio'];
         $proposta = $row['ds_proposta'];
+        $voto = $row['nr_voto'];
         $container .= '
         
         <div class="row row-cols-1 row-cols-md-2">
@@ -31,7 +32,7 @@ if (isset($_POST['displaySend'])) {
                 <p class="card-text">'.$representSala.'</p>
                 <p class="card-text">'.$cargoGremio.'</p>
                 <p class="card-text">'.$proposta.'</p>
-                <p class="card-text"></p>
+                <p class="card-text">'.$voto.'</p>
                 <button class="btn btn-dark" onclick="GetDetails('.$cd_candidato.')">Editar</button>
                 <button class="btn btn-danger button" onclick="DeleteUma('.$cd_candidato.')">Deletar</button>
               </div>
