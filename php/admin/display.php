@@ -24,7 +24,7 @@ if (isset($_POST['displaySend'])) {
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body text-info">
-                <h5 class="card-title">Candidato</h5>
+                <h5 class="card-title">Representante de Classe</h5>
                 <p class="card-text">'.$rm.'</p>
                 <p class="card-text">'.$nome.'</p>
                 <p class="card-text">'.$dtnasc.'</p>

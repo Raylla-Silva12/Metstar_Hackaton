@@ -22,11 +22,10 @@ if (isset($_POST['hiddendata'])) {
     $uniqueid = $_POST['hiddendata'];
     $rm = $_POST['updaterm'];
     $nome = $_POST['updatenome'];
-    $dtnasc = $_POST['updatedtnasc'];
     $turma = $_POST['updateturma'];
     $representSala = $_POST['updaterepresentSala'];
     $proposta = $_POST['updateproposta'];
 
-    $sql = "UPDATE tb_candidato SET cd_rm='$rm', nm_candidato='$nome', dt_nasc='$dtnasc', nm_turma='$turma', ds_representante_sala='$representSala', ds_proposta='$proposta' WHERE cd_candidato=$uniqueid";
+    $sql = "UPDATE tb_candidato SET cd_rm='$rm', nm_candidato='$nome', nm_turma='$turma', ds_representante_sala='$representSala', ds_proposta='$proposta' WHERE cd_candidato=$uniqueid";
     $result = mysqli_query($mysqli, $sql);
 }
