@@ -44,10 +44,10 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
 
     <div class="container my-3">
         <h1 class="text-center h1-crud mt-5">Eleições Ativas</h1>
-        <button type="button" class="btn btn-dark my-3" data-toggle="modal" data-target="#completeModalChapa">
+        <button type="button" class="btn btn-dark my-3 mt-5" data-toggle="modal" data-target="#completeModalChapa">
             Adicionar Chapa
         </button>
-        <button type="button" class="btn btn-dark my-3" data-toggle="modal" data-target="#completeModal">
+        <button type="button" class="btn btn-dark my-3 mt-5" data-toggle="modal" data-target="#completeModal">
             Adicionar Candidato
         </button>
         <div id="displayAdmin"></div>
@@ -327,9 +327,6 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
     </div>
     <!-- Fim do Modal de Cadastro Gremio -->
 
-
-
-
     <!-- Modal de Cadastro -->
     <div class="modal fade" id="completeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
@@ -463,7 +460,9 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
     </div>
     <!-- Fim do Modal de Edição -->
 
-
+    <footer class="text-center mt-5 bg-dark text-white">
+        Metstars - 2022
+    </footer>
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -531,7 +530,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
          
 
           $.ajax({
-            url: 'chapa/cand1.php',
+            url: 'cadastrar_chapa.php',
             type: 'post',
             data:{
                 nomeChapaGremioSend: nomeChapaGremioAdd,
@@ -541,145 +540,37 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 turmaChapaSend1: turmaChapaAdd1,
                 cargoChapaSend1: cargoChapaAdd1,
                 propostaChapaSend1: propostaChapaAdd1,
-            },
-            success: function (data,status) {
-                //console.log(status);
-                $('#completeModalChapa').modal('hide');
-                displayData();
-
-                $(document).ready(function() {
-                    $('.modal').on('hidden.bs.modal', function() {
-                        $(this).find('input').val('');
-                        $(this).find('select').val(''); 
-                        $(this).find('textarea').val('');
-                 });
-                });
-            }
-          });
-        
-
-        $.ajax({
-            url: 'chapa/cand2.php',
-            type: 'post',
-            data:{
-                nomeChapaGremioSend: nomeChapaGremioAdd,
 
                 rmChapaSend2: rmChapaAdd2,
                 nomeChapaSend2: nomeChapaAdd2,
                 turmaChapaSend2: turmaChapaAdd2,
                 cargoChapaSend2: cargoChapaAdd2,
                 propostaChapaSend2: propostaChapaAdd2,
-            },
-            success: function (data,status) {
-                //console.log(status);
-                $('#completeModalChapa').modal('hide');
-                displayData();
-
-                $(document).ready(function() {
-                    $('.modal').on('hidden.bs.modal', function() {
-                        $(this).find('input').val('');
-                        $(this).find('select').val(''); 
-                        $(this).find('textarea').val('');
-                 });
-                });
-            }
-          });
-        
-
-        $.ajax({
-            url: 'chapa/cand3.php',
-            type: 'post',
-            data:{
-                nomeChapaGremioSend: nomeChapaGremioAdd,
 
                 rmChapaSend3: rmChapaAdd3,
                 nomeChapaSend3: nomeChapaAdd3,
                 turmaChapaSend3: turmaChapaAdd3,
                 cargoChapaSend3: cargoChapaAdd3,
                 propostaChapaSend3: propostaChapaAdd3,
-            },
-            success: function (data,status) {
-                //console.log(status);
-                $('#completeModalChapa').modal('hide');
-                displayData();
-
-                $(document).ready(function() {
-                    $('.modal').on('hidden.bs.modal', function() {
-                        $(this).find('input').val('');
-                        $(this).find('select').val(''); 
-                        $(this).find('textarea').val('');
-                 });
-                });
-            }
-          });
-        
-
-        $.ajax({
-            url: 'chapa/cand4.php',
-            type: 'post',
-            data:{
-                nomeChapaGremioSend: nomeChapaGremioAdd,
 
                 rmChapaSend4: rmChapaAdd4,
                 nomeChapaSend4: nomeChapaAdd4,
                 turmaChapaSend4: turmaChapaAdd4,
                 cargoChapaSend4: cargoChapaAdd4,
                 propostaChapaSend4: propostaChapaAdd4,
-            },
-            success: function (data,status) {
-                //console.log(status);
-                $('#completeModalChapa').modal('hide');
-                displayData();
-
-                $(document).ready(function() {
-                    $('.modal').on('hidden.bs.modal', function() {
-                        $(this).find('input').val('');
-                        $(this).find('select').val(''); 
-                        $(this).find('textarea').val('');
-                 });
-                });
-            }
-          });
-        
-
-        $.ajax({
-            url: 'chapa/cand5.php',
-            type: 'post',
-            data:{
-                nomeChapaGremioSend: nomeChapaGremioAdd,
 
                 rmChapaSend5: rmChapaAdd5,
                 nomeChapaSend5: nomeChapaAdd5,
                 turmaChapaSend5: turmaChapaAdd5,
                 cargoChapaSend5: cargoChapaAdd5,
                 propostaChapaSend5: propostaChapaAdd5,
-            },
-            success: function (data,status) {
-                //console.log(status);
-                $('#completeModalChapa').modal('hide');
-                displayData();
-
-                $(document).ready(function() {
-                    $('.modal').on('hidden.bs.modal', function() {
-                        $(this).find('input').val('');
-                        $(this).find('select').val(''); 
-                        $(this).find('textarea').val('');
-                 });
-                });
-            }
-          });
-
-          $.ajax({
-            url: 'chapa/cand6.php',
-            type: 'post',
-            data:{
-                nomeChapaGremioSend: nomeChapaGremioAdd,
 
                 rmChapaSend6: rmChapaAdd6,
                 nomeChapaSend6: nomeChapaAdd6,
                 turmaChapaSend6: turmaChapaAdd6,
                 cargoChapaSend6: cargoChapaAdd6,
                 propostaChapaSend6: propostaChapaAdd6,
+
             },
             success: function (data,status) {
                 //console.log(status);
@@ -696,7 +587,6 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
             }
           });
         }
-
 
         function adduma() {
           var rmAdd=$('#rm').val();
@@ -733,7 +623,21 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
           });
         }
 
-        // Deleção
+        // Deleção Chapa
+        function DeleteChapa(deleteid) {
+            $.ajax({
+                url: 'delete_chapa.php',
+                type: 'post',
+                data:{
+                    deletesend: deleteid
+                },
+                success: function(data, status) {
+                    displayData();
+                }
+            });
+        }
+
+        // Deleção Candidato
         function DeleteUma(deleteid) {
             $.ajax({
                 url: 'delete.php',
@@ -747,7 +651,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
             });
         }
 
-        // Alteração
+        // Alteração 
         function GetDetails(updateid) {
             $('#hiddendata').val(updateid);
             $.post('update.php',{updateid:updateid},function(data, status){
@@ -762,7 +666,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
             $('#updateModal').modal('show');
         }
 
-        //Eevento onclick do EDITAR
+        //Eevento onclick do EDITAR 
         function updateDetails() {
             var updaterm = $('#updaterm').val();
             var updatenome = $('#updatenome').val();
@@ -783,6 +687,8 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 displayData();
             });
         }
+
+
     </script>
 </body>
 </html>

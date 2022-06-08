@@ -48,12 +48,12 @@ if (isset($_SSESION['msg'])) {
         <h1 class="text-center mt-5 mb-3">Eleições Ativas</h1>
     </header>
 
-    <main class="text-center mx-5">
+    <main class="mx-5">
         <div id="displayEleitor"></div>
     </main>
 
     <footer class="text-center mt-5 bg-dark text-white">
-        footer
+        Metstars - 2022
     </footer>
     
 

@@ -4,6 +4,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
-    font-family: 'Poppins', sans-serif;
+.turma {
+    text-transform: uppercase;
 }
+
+.card-header {
+    font-weight: bold;
+}
+
+
+
