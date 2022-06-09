@@ -5,6 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
 	
 	 <!-- BOOTSTRAP AND CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,7 +30,7 @@
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 m-auto">
                     <div class="card border-0">
                         <div class="card-body shadow">
-                            <img class="rounded mx-auto d-block" src="img/Renata-reduzida-branca.png" alt="" height="80px" width="140px">
+                        <img class="rounded mx-auto d-block" src="assets/logo.png" alt="" height="110px" width="150px">
                             
                             <form action="php/login.php" method="POST">
                                 <div class="form-group">
