@@ -28,7 +28,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/style.css">
 
-    <title>Coordenador - Metstars</title>
+    <title>Área do Coordenador - Metstars</title>
     
 </head>
 
@@ -37,7 +37,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand navbar-light bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="../../assets/logo.png" width="62" height="48" alt="">
+            <img src="../../assets/logo.png" width="62" height="48" alt="logo">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
