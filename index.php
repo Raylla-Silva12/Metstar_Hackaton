@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
 	
-	 <!-- BOOTSTRAP AND CSS -->
+	<!-- BOOTSTRAP AND CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
     
@@ -22,7 +22,7 @@
     <title>Entrar - Metstars</title>
     
 </head>
-<body>
+<body id="index-body">
 
     <section>
         <div class="container mt-5 pt-5">
@@ -30,8 +30,7 @@
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 m-auto">
                     <div class="card border-0 cartao">
                         <div class="card-body shadow">
-                        <img class="rounded mx-auto d-block" src="assets/logo.png" alt="" height="110px" width="150px">
-                            
+                        <img class="rounded mx-auto d-block" src="assets/logo.png" alt="" height="120px" width="150px">
                             <form action="php/login.php" method="POST">
                                 <div class="form-group">
                                     <input type="number" class="form-control my-3 py-2" id="input-rm-login" name="rm" placeholder="RM" required autofocus />
@@ -40,7 +39,7 @@
                                     <input type="password" class="form-control my-3 py-2" id="input-senha-login" name="senha" placeholder="Senha" required autofocus />
                                 </div>
                                 <div class="text-center mt-3">
-                                    <button type="submit" class="btn btn-login">Entrar</button>
+                                    <button type="submit" class="btn btn-login px-5 text-white">Entrar</button>
                                 </div>
                             </form>
                         </div>
@@ -49,6 +48,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
