@@ -41,6 +41,10 @@ h1 {
     font-weight: bold;
 }
 
+form {
+    animation-name: fade;
+    animation-duration: 1s;
+}
 input::-webkit-outer-spin-button, 
 input::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
@@ -53,4 +57,12 @@ input[type=number] {
 
 
 
-
+@keyframes fade {
+from{
+    opacity: 0;
+    transform: scale(0.9);
+}to{
+    opacity: 1;
+    transform: scale(1);
+    }
+}
