@@ -40,16 +40,16 @@ if (isset($_POST['displaySend'])) {
 
         <div class="col mb-4">
           <div class="card">
-            <div class="card-header body-representante">'.$turma.'</div>
-            <div class="card-body body-representante">
-                  <p class="card-text"><b>RM:</b> '.$rm.'</p>
-                  <p class="card-text"><b>Nome:</b> '.$nome.'</p>
-                  <p class="card-text"><b>Turma:</b> '.$turma.'</p>
-                  <p class="card-text"><b>Cargo Desejado:</b> '.$representSala.'</p>
-                  <p class="card-text"><b>Proposta:</b> '.$proposta.'</p>
-                  <p class="card-text"><b>Quantidade de Votos: '.$voto.'</b></p>
-                  <button class="btn btn-dark" onclick="GetDetails('.$cd_candidato.')">Editar</button>
-                  <button class="btn btn-danger button" onclick="DeleteUma('.$cd_candidato.')">Deletar</button>
+            <div class="card-header header-representante-admin">'.$turma.'</div>
+            <div class="card-body body-representante-admin">
+                <p class="card-text"><b>RM:</b> '.$rm.'</p>
+                <p class="card-text"><b>Nome:</b> '.$nome.'</p>
+                <p class="card-text"><b>Turma:</b> '.$turma.'</p>
+                <p class="card-text"><b>Cargo Desejado:</b> '.$representSala.'</p>
+                <p class="card-text"><b>Proposta:</b> '.$proposta.'</p>
+                <p class="card-text"><b>Quantidade de Votos: '.$voto.'</b></p>
+                <button class="btn btn btn-editar text-white" onclick="GetDetails('.$cd_candidato.')">Editar</button>
+                <button class="btn btn btn-deletar text-white" onclick="DeleteUma('.$cd_candidato.')">Deletar</button>
               </div>
             </div>
           </div>

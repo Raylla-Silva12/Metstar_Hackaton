@@ -35,25 +35,25 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
 <body>
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand navbar-light bg-dark">
+    <nav class="navbar navbar-expand navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="../../assets/logo.png" width="62" height="48" alt="logo">
+            <img src="../../assets/logo-sem-nome.png" width="60px" height="48px" alt="logo">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <a class="navbar-brand text-white" href="#">Metstars</a>
             </ul>   
         </div>
-        <a href="../encerrar_sessao.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SAIR</button></a>
+        <a href="../encerrar_sessao.php"><img src="../../assets/sair.png" width="60" height="48" alt="sair"></a>
     </nav>
     <!-- FIM NAVIGATION -->
 
     <div class="container my-3">
         <h1 class="text-center h1-crud mt-5">Eleições Ativas</h1>
-        <button type="button" class="btn btn-dark my-3 mt-5" data-toggle="modal" data-target="#completeModalChapa">
+        <button type="button" class="btn btn btn-add-chapa my-3 mt-5 text-white" data-toggle="modal" data-target="#completeModalChapa">
             Adicionar Chapa
         </button>
-        <button type="button" class="btn btn-dark my-3 mt-5" data-toggle="modal" data-target="#completeModal">
+        <button type="button" class="btn btn btn-add-candidato my-3 mt-5 text-white" data-toggle="modal" data-target="#completeModal">
             Adicionar Candidato
         </button>
         <div id="displayAdmin"></div>

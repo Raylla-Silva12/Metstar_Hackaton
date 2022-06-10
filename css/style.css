@@ -126,10 +126,25 @@ input::-webkit-inner-spin-button {
     border: dashed 1px #5400ff;
 }
 
+.header-representante-admin {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #4891e454;
+    border: dashed 1px #0026ff;
+}
+
 .body-representante {
     border-left: dashed 1px #5400ff;
     border-right: dashed 1px #5400ff;
     border-bottom: dashed 1px #5400ff;
+    text-transform: capitalize;
+}
+
+.body-representante-admin {
+    border-left: dashed 1px #0026ff;
+    border-right: dashed 1px #0026ff;
+    border-bottom: dashed 1px #0026ff;
+    text-transform: capitalize;
 }
 
 .botao-votar-representante {
@@ -151,6 +166,50 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
 }
 
+
+.btn-editar {
+    background-color: #0e61dd;
+}
+
+.btn-editar {
+    -webkit-transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.btn-editar:hover {
+    box-shadow: 0 0 40px 40px #3e0283 inset;
+    border-color: #3e0283;
+}
+
+
+.btn-deletar {
+    background-color: #e2092d;
+}
+
+.btn-deletar {
+    -webkit-transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.btn-deletar:hover {
+    box-shadow: 0 0 40px 40px #c20188 inset;
+    border-color: #bb0776;
+}
+
+
+.btn-add-chapa, .btn-add-candidato {
+    background-color: #0e61dd;
+}
+
+.btn-add-chapa, .btn-add-candidato {
+    -webkit-transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.btn-add-chapa:hover, .btn-add-candidato:hover {
+    box-shadow: 0 0 40px 40px #3e0283 inset;
+    border-color: #3e0283;
+}
 
 /* FIM ELEITOR E ADMIN*/
 
