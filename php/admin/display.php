@@ -120,7 +120,6 @@ if (isset($_POST['displaySend'])) {
         <div class="card">
           <div class="card-header">Chapa '.$nm_chapa.'</div>
           <div class="card-body">
-            <h5 class="card-title">'.$nm_chapa.'</h5>
             
             <div class="row">
               <div class="col">

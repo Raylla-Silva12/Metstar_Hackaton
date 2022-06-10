@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 m-auto">
                     <div class="card border-0 cartao">
-                        <div class="card-body shadow">
+                        <div class="card-body shadow-lg">
                         <img class="rounded mx-auto d-block" src="assets/logo.png" alt="" height="120px" width="150px">
                             <form action="php/login.php" method="POST">
                                 <div class="form-group">

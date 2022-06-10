@@ -108,9 +108,8 @@ if (isset($_POST['displaySend'])) {
     <div class="row row-cols-1 row-cols-md-12">
       <div class="col-12">
         <div class="card">
-          <div class="card-header">Chapa '.$nm_chapa.'</div>
-          <div class="card-body">
-            <h5 class="card-title">'.$nm_chapa.'</h5>
+          <div class="card-header header-chapa">Chapa '.$nm_chapa.'</div>
+          <div class="card-body body-chapa">
             
             <div class="row">
               <div class="col">

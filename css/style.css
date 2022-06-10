@@ -126,6 +126,13 @@ input::-webkit-inner-spin-button {
     border: dashed 1px #5400ff;
 }
 
+.header-chapa {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #0ac0e098;
+    border: dashed 1px #037d81;
+}
+
 .header-representante-admin {
     text-transform: uppercase;
     font-weight: bold;
@@ -137,6 +144,13 @@ input::-webkit-inner-spin-button {
     border-left: dashed 1px #5400ff;
     border-right: dashed 1px #5400ff;
     border-bottom: dashed 1px #5400ff;
+    text-transform: capitalize;
+}
+
+.body-chapa {
+    border-left: dashed 1px #037d81;
+    border-right: dashed 1px #037d81;
+    border-bottom: dashed 1px #037d81;
     text-transform: capitalize;
 }
 

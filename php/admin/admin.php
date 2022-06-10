@@ -44,7 +44,7 @@ if ((!isset($_SESSION['rm']) == true) and (!isset($_SESSION['senha']) == true)) 
                 <a class="navbar-brand text-white" href="#">Metstars</a>
             </ul>   
         </div>
-        <a href="../encerrar_sessao.php"><img src="../../assets/sair.png" width="60" height="48" alt="sair"></a>
+        <a href="../encerrar_sessao.php"><img src="../../assets/sair.png" width="55" height="45" alt="sair"></a>
     </nav>
     <!-- FIM NAVIGATION -->
 
