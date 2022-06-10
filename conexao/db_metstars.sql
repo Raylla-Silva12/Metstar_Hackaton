@@ -80,13 +80,12 @@ INSERT INTO tb_candidato (cd_candidato, cd_rm, nm_candidato, nm_turma, ds_repres
 (null, 20011, "Rafa Moreira", "1ADM", "representante", "Posposta de campanha.");
 
 /* chapa */
-
 INSERT INTO `tb_gremio`(`cd_gremio`, `nm_chapa`, `cd_rm_candidato1`, `nm_candidato_chapa1`, `nm_turma1`, `ds_cargo_gremio1`, `ds_proposta1`, `cd_rm_candidato2`, `nm_candidato_chapa2`, `nm_turma2`, `ds_cargo_gremio2`, `ds_proposta2`, `cd_rm_candidato3`, `nm_candidato_chapa3`, `nm_turma3`, `ds_cargo_gremio3`, `ds_proposta3`, `cd_rm_candidato4`, `nm_candidato_chapa4`, `nm_turma4`, `ds_cargo_gremio4`, `ds_proposta4`, `cd_rm_candidato5`, `nm_candidato_chapa5`, `nm_turma5`, `ds_cargo_gremio5`, `ds_proposta5`, `cd_rm_candidato6`, `nm_candidato_chapa6`, `nm_turma6`, `ds_cargo_gremio6`, `ds_proposta6`) 
 
 VALUES (null,"Lua",
-        20036,"Lucia Morais","2DS",null,"Proposta de campanha.",
-        23098,"Eduardo Caetano","2ADM",null,"Proposta de campanha.",
-        29888,"Pedro Lucas","1MAM",null,"Proposta de campanha.",
-        29497,"Julia Silva","3MIN",null,"Proposta de campanha.",
-        29949,"Tonio Souza","1ADM",null,"Proposta de campanha.",
-        29484,"Rebeca Leal","2MAD",null,"Proposta de campanha.");
+        20036,"Lucia Morais","2DS","presidente","Proposta de campanha.",
+        23098,"Eduardo Caetano","2ADM","vice-presidente","Proposta de campanha.",
+        29888,"Pedro Lucas","1MAM","tesoureiro","Proposta de campanha.",
+        29497,"Julia Silva","3MIN","diretor de cultura","Proposta de campanha.",
+        29949,"Tonio Souza","1ADM","diretor de esporte","Proposta de campanha.",
+        29484,"Rebeca Leal","2MAD","diretor de imprensa","Proposta de campanha.");
