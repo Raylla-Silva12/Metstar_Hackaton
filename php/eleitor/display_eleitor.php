@@ -19,7 +19,7 @@
 <?php
 include_once('../../conexao/conexao.php');
 
-echo "<h1 class='text-left mt-5'>Eleições de Representantes</h1><br>";
+echo "<h3 class='text-left mt-5'>Eleições de Representantes</h3><br>";
 
 if (isset($_POST['displaySend'])) {
     $container='<div class="row row-cols-1 row-cols-md-2 text-left">';
@@ -38,15 +38,14 @@ if (isset($_POST['displaySend'])) {
         
         <div class="col mb-4">
           <div class="card">
-            <div class="card-header turma">'.$turma.'</div>
-            <div class="card-body">
-                <h5 class="card-title">Representante de Classe</h5>
+            <div class="card-header header-representante">'.$turma.'</div>
+            <div class="card-body body-representante">
                 <p class="card-text"><b>Nome:</b> '.$nome.'</p>
                 <p class="card-text"><b>Turma:</b> '.$turma.'</p>
                 <p class="card-text"><b>Cargo Desejado:</b> '.$representSala.'</p>
                 <p class="card-text"><b>Proposta:</b> '.$proposta.'</p>
                 <p class="card-text"><b>Quantidade de votos: '.$voto_candidato.'</b></p>  
-                <a href="votar.php?cd='.$row['cd_candidato'].'">Votar</a>
+                <a  class="botao-votar-representante text-white" href="votar.php?cd='.$row['cd_candidato'].'">Votar</a>
               </div>
             </div>
           </div>
@@ -60,7 +59,7 @@ if (isset($_POST['displaySend'])) {
     echo $container;
 }
 
-echo "<h1 class='text-left mt-5'>Eleições do Grêmio</h1><br>";
+echo "<h3 class='text-left mt-5'>Eleições do Grêmio</h3><br>";
 
 if (isset($_POST['displaySend'])) {
   $container='<div class="div-table mb-5 text-left">';
@@ -153,7 +152,7 @@ if (isset($_POST['displaySend'])) {
               </div>
             </div>
 
-            <p class="card-text"><b>Quantidade de votos: '.$voto_chapa.'</b></p>
+            <p class="card-text votos"><b>Quantidade de votos: '.$voto_chapa.'</b></p>
             <a href="votar_chapa.php?cd_chapa='.$row['cd_gremio'].'">Votar</a>
           </div>
         </div>

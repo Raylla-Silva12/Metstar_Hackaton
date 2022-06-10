@@ -37,16 +37,16 @@ if (isset($_SSESION['msg'])) {
 <body>
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand navbar-light bg-dark">
+    <nav class="navbar navbar-expand navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="../../assets/logo.png" width="62" height="48" alt="">
+            <img src="../../assets/logo-sem-nome.png" width="60" height="48" alt="">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <a class="navbar-brand text-white" href="#">Metstars</a>
             </ul>   
         </div>
-        <a href="../encerrar_sessao.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SAIR</button></a>
+        <a href="../encerrar_sessao.php"><img src="../../assets/sair.png" width="60" height="48" alt=""><!-- <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">SAIR</button> --></a>
     </nav>
     <!-- FIM NAVIGATION -->
 

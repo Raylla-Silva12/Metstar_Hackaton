@@ -1,13 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-family: 'Caveat', cursive !important;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: 'Caveat', cursive !important;
+}
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { 
+    -moz-appearance: textfield; 
+}
 
 /* INDEX */
 
 #index-body {
     background-image: linear-gradient( 90deg, #5400ff, #00BFFF);
     font-family: 'Montserrat', sans-serif;
-    
-/* font-family: 'Poppins', sans-serif; */
 }
 
 .btn-login {
@@ -26,43 +50,62 @@
     border-color: #020a9e;
 }
 
-
-
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.turma {
-    text-transform: uppercase;
-}
-
-.card-header {
-    font-weight: bold;
-}
-
 form {
     animation-name: fade;
     animation-duration: 1s;
 }
-input::-webkit-outer-spin-button, 
-input::-webkit-inner-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-}
-
-input[type=number] { 
-    -moz-appearance: textfield; 
-}
-
-
 
 @keyframes fade {
-from{
-    opacity: 0;
-    transform: scale(0.9);
-}to{
-    opacity: 1;
-    transform: scale(1);
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+        }
     }
+/* FIM INDEX */
+
+
+/* ELEITOR E ADMIN*/
+
+.header-representante {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #484be454;
+    border: dashed 1px #5400ff;
 }
+
+.body-representante {
+    border-left: dashed 1px #5400ff;
+    border-right: dashed 1px #5400ff;
+    border-bottom: dashed 1px #5400ff;
+}
+
+.botao-votar-representante {
+    background-color: #5400ff;
+    font-weight: bold;
+    padding: 5px 30px 5px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.botao-votar-representante {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.botao-votar-representante:hover {
+    box-shadow: 0 0 40px 40px #020a9e inset;
+    border-color: #020a9e;
+    text-decoration: none;
+}
+
+
+
+
+/* FIM ELEITOR E ADMIN*/
+
+
+
+

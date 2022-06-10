@@ -20,7 +20,7 @@
 <?php
 include_once('../../conexao/conexao.php');
 
-echo "<h1 class='mt-2'>Eleições de Representantes</h1><br>";
+echo "<h3 class='mt-2'>Eleições de Representantes</h3><br>";
 
 if (isset($_POST['displaySend'])) {
     $container='<div class="row row-cols-1 row-cols-md-2">';
@@ -40,9 +40,8 @@ if (isset($_POST['displaySend'])) {
 
         <div class="col mb-4">
           <div class="card">
-            <div class="card-header">'.$turma.'</div>
-            <div class="card-body">
-              <h5 class="card-title">Representante de Classe</h5>
+            <div class="card-header body-representante">'.$turma.'</div>
+            <div class="card-body body-representante">
                   <p class="card-text"><b>RM:</b> '.$rm.'</p>
                   <p class="card-text"><b>Nome:</b> '.$nome.'</p>
                   <p class="card-text"><b>Turma:</b> '.$turma.'</p>
@@ -64,7 +63,7 @@ if (isset($_POST['displaySend'])) {
     echo $container;
 }
 
-echo "<h1 class='mt-5'>Eleições do Grêmio</h1><br>";
+echo "<h3 class='mt-5'>Eleições do Grêmio</h3><br>";
 
 if (isset($_POST['displaySend'])) {
   $container='<div class="div-table mb-5">';
