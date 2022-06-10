@@ -28,15 +28,15 @@
         <div class="container mt-5 pt-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 m-auto">
-                    <div class="card border-0">
+                    <div class="card border-0 cartao">
                         <div class="card-body shadow">
                         <img class="rounded mx-auto d-block" src="assets/logo.png" alt="" height="120px" width="150px">
                             <form action="php/login.php" method="POST">
                                 <div class="form-group">
-                                    <input type="number" class="form-control my-3 py-2" id="input-rm-login" name="rm" placeholder="RM" required autofocus />
+                                    <input type="number" class="form-control my-3 py-2 input-bloco" id="input-rm-login" name="rm" placeholder="RM" required autofocus />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control my-3 py-2" id="input-senha-login" name="senha" placeholder="Senha" required autofocus />
+                                    <input type="password" class="form-control my-3 py-2 input-bloco" id="input-senha-login" name="senha" placeholder="Senha" required autofocus />
                                 </div>
                                 <div class="text-center mt-3">
                                     <button type="submit" class="btn btn-login px-5 text-white">Entrar</button>
@@ -60,5 +60,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
