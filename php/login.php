@@ -19,6 +19,8 @@
 	                $_SESSION['senha'] = $linha->ds_senha;
 	                $_SESSION['cargo'] = $linha->ds_cargo;
 	    
+					sleep(1);
+
 	                if ($linha->ds_cargo == "aluno") { 
 	                    ?> <script> window.location.href = "eleitor/eleitor.php"; </script> <?php
 

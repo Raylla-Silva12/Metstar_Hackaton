@@ -2,7 +2,6 @@ const btnlog = document.querySelector(".btn-login");
 const card = document.querySelector(".cartao");
 
 btnlog.addEventListener("click", (event) => {
-    event.preventDefault();
     
     const fields = [ ... document.querySelectorAll(".input-bloco")];
     fields.forEach(field =>{
