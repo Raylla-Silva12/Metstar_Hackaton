@@ -28,7 +28,7 @@
         <div class="container mt-5 pt-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 m-auto">
-                    <div class="card border-0">
+                    <div class="card border-0 cartao">
                         <div class="card-body shadow">
                         <img class="rounded mx-auto d-block" src="assets/logo.png" alt="" height="110px" width="150px">
                             

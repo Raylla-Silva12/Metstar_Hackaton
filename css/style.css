@@ -12,10 +12,10 @@ h1 {
     font-weight: bold;
 }
 
-form {
-    animation-name: fade;
-    animation-duration: 1s;
+.card {
+    animation: fade 1.8s;
 }
+
 input::-webkit-outer-spin-button, 
 input::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
