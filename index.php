@@ -24,7 +24,7 @@
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 m-auto">
                     <div class="card border-0">
                         <div class="card-body shadow">
-                            <img class="rounded mx-auto d-block" src="img/Renata-reduzida-branca.png" alt="" height="80px" width="140px">
+                            <img class="rounded mx-auto d-block" src="#" alt="alter" height="80px" width="140px">
                             
                             <form action="php/login.php" method="POST">
                                 <div class="form-group">
