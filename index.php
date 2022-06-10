@@ -20,10 +20,6 @@
     <link rel="stylesheet" href="css/style.css">
 	
     <title>Entrar - Metstars</title>
-
-    <style>
-       
-    </style>
     
 </head>
 <body id="index-body">
