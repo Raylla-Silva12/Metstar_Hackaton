@@ -59,7 +59,7 @@ CREATE TABLE tb_gremio (
 CREATE TABLE tb_usuario (
   cd_usuario INT NOT NULL AUTO_INCREMENT,
   cd_rm INT NOT NULL,
-  nm_turma ENUM('1DS','1ADM','1MIN','1MAD','1MAM','2DS','2ADM','2MIN','2MAD','2MAM','3DS','3ADM','3MIN','3MAD','3MAM') NOT NULL,
+  nm_turma ENUM('1DS','1ADM','1MIN','1MAD','1MAM','2DS','2ADM','2MIN','2MAD','2MAM','3DS','3ADM','3MIN','3MAD','3MAM') NULL,
   nm_usuario VARCHAR(60) NOT NULL,
   ds_senha VARCHAR(20) NOT NULL,
   ds_cargo ENUM('aluno', 'coordenador'),
@@ -70,9 +70,10 @@ CREATE TABLE tb_usuario (
 /* INSERT P/ TESTES */
 
 /* usuários */
-INSERT INTO tb_usuario (cd_usuario, cd_rm, nm_usuario, ds_senha, ds_cargo) VALUES 
-(null,20024,"Raylla",123,"aluno"),
-(null,20023,"Marcelo",123,"coordenador");
+INSERT INTO tb_usuario (cd_usuario, cd_rm, nm_turma, nm_usuario, ds_senha, ds_cargo) VALUES 
+(null,20024, "2DS", "Raylla",123,"aluno"),
+(null,20022, "1DS", "Diego",123,"aluno"),
+(null,20023, null, "Marcelo",123,"coordenador");
 
 /* candidatos */
 INSERT INTO tb_candidato (cd_candidato, cd_rm, nm_candidato, nm_turma, ds_representante_sala, ds_proposta) VALUES 

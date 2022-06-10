@@ -18,6 +18,7 @@
 	                $_SESSION['rm'] = $linha->cd_rm;
 	                $_SESSION['senha'] = $linha->ds_senha;
 	                $_SESSION['cargo'] = $linha->ds_cargo;
+					$_SESSION['turma'] = $linha->nm_turma;
 	    
 					sleep(1);
 
