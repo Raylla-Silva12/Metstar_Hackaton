@@ -45,7 +45,7 @@ if (isset($_POST['displaySend'])) {
                 <p class="card-text"><b>Cargo Desejado:</b> '.$representSala.'</p>
                 <p class="card-text"><b>Proposta:</b> '.$proposta.'</p>
                 <p class="card-text"><b>Quantidade de votos: '.$voto_candidato.'</b></p>  
-                <a  class="botao-votar-representante text-white" href="votar.php?cd='.$row['cd_candidato'].'">Votar</a>
+                <a  class="botao-votar-representante text-white" href="votar.php">Votar</a>
               </div>
             </div>
           </div>
