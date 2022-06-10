@@ -43,11 +43,11 @@ if (isset($_POST['displaySend'])) {
             <div class="card-header">'.$turma.'</div>
             <div class="card-body">
               <h5 class="card-title">Representante de Classe</h5>
-                  <p class="card-text">RM: '.$rm.'</p>
-                  <p class="card-text">Nome: '.$nome.'</p>
-                  <p class="card-text">Turma: '.$turma.'</p>
-                  <p class="card-text">Cargo Desejado: '.$representSala.'</p>
-                  <p class="card-text">Proposta: '.$proposta.'</p>
+                  <p class="card-text"><b>RM:</b> '.$rm.'</p>
+                  <p class="card-text"><b>Nome:</b> '.$nome.'</p>
+                  <p class="card-text"><b>Turma:</b> '.$turma.'</p>
+                  <p class="card-text"><b>Cargo Desejado:</b> '.$representSala.'</p>
+                  <p class="card-text"><b>Proposta:</b> '.$proposta.'</p>
                   <p class="card-text"><b>Quantidade de Votos: '.$voto.'</b></p>
                   <button class="btn btn-dark" onclick="GetDetails('.$cd_candidato.')">Editar</button>
                   <button class="btn btn-danger button" onclick="DeleteUma('.$cd_candidato.')">Deletar</button>
@@ -125,43 +125,48 @@ if (isset($_POST['displaySend'])) {
             
             <div class="row">
               <div class="col">
-                <p class="card-text">RM: '.$cd_rm_candidato1.'</p>
-                <p class="card-text">Nome: '.$nm_candidato_chapa1.'</p>
-                <p class="card-text">Turma: '.$nm_turma1.'</p>
-                <p class="card-text">Cargo desejado: '.$ds_cargo_gremio1.'</p>
-                <p class="card-text">Proposta: '.$ds_proposta1.'</p>
+                <p class="card-text"><b>RM:</b> '.$cd_rm_candidato1.'</p>
+                <p class="card-text"><b>Nome:</b> '.$nm_candidato_chapa1.'</p>
+                <p class="card-text"><b>Turma:</b> '.$nm_turma1.'</p>
+                <p class="card-text"><b>Cargo desejado:</b> '.$ds_cargo_gremio1.'</p>
+                <p class="card-text"><b>Proposta:</b> '.$ds_proposta1.'</p>
+                <hr>
     
-                <p class="card-text">RM: '.$cd_rm_candidato2.'</p>
-                <p class="card-text">Nome: '.$nm_candidato_chapa2.'</p>
-                <p class="card-text">Turma: '.$nm_turma2.'</p>
-                <p class="card-text">Cargo desejado: '.$ds_cargo_gremio2.'</p>
-                <p class="card-text">Proposta: '.$ds_proposta2.'</p>
-    
-                <p class="card-text">RM: '.$cd_rm_candidato3.'</p>
-                <p class="card-text">Nome: '.$nm_candidato_chapa3.'</p>
-                <p class="card-text">Turma: '.$nm_turma3.'</p>
-                <p class="card-text">Cargo desejado: '.$ds_cargo_gremio3.'</p>
-                <p class="card-text">Proposta: '.$ds_proposta3.'</p>
+                <p class="card-text"><b>RM:</b> '.$cd_rm_candidato2.'</p>
+                <p class="card-text"><b>Nome:</b> '.$nm_candidato_chapa2.'</p>
+                <p class="card-text"><b>Turma:</b> '.$nm_turma2.'</p>
+                <p class="card-text"><b>Cargo desejado:</b> '.$ds_cargo_gremio2.'</p>
+                <p class="card-text"><b>Proposta:</b> '.$ds_proposta2.'</p>
+                <hr>
+
+                <p class="card-text"><b>RM:</b> '.$cd_rm_candidato3.'</p>
+                <p class="card-text"><b>Nome:</b> '.$nm_candidato_chapa3.'</p>
+                <p class="card-text"><b>Turma:</b> '.$nm_turma3.'</p>
+                <p class="card-text"><b>Cargo desejado:</b> '.$ds_cargo_gremio3.'</p>
+                <p class="card-text"><b>Proposta:</b> '.$ds_proposta3.'</p>
               </div>
 
               <div class="col">
-                <p class="card-text">RM: '.$cd_rm_candidato4.'</p>
-                <p class="card-text">Nome: '.$nm_candidato_chapa4.'</p>
-                <p class="card-text">Turma: '.$nm_turma4.'</p>
-                <p class="card-text">Cargo desejado: '.$ds_cargo_gremio4.'</p>
-                <p class="card-text">Proposta: '.$ds_proposta4.'</p>
+                <p class="card-text"><b>RM:</b> '.$cd_rm_candidato4.'</p>
+                <p class="card-text"><b>Nome:</b> '.$nm_candidato_chapa4.'</p>
+                <p class="card-text"><b>Turma:</b> '.$nm_turma4.'</p>
+                <p class="card-text"><b>Cargo desejado:</b> '.$ds_cargo_gremio4.'</p>
+                <p class="card-text"><b>Proposta:</b> '.$ds_proposta4.'</p>
+                <hr>
     
-                <p class="card-text">RM: '.$cd_rm_candidato5.'</p>
-                <p class="card-text">Nome: '.$nm_candidato_chapa5.'</p>
-                <p class="card-text">Turma: '.$nm_turma5.'</p>
-                <p class="card-text">Cargo desejado: '.$ds_cargo_gremio5.'</p>
-                <p class="card-text">Proposta: '.$ds_proposta5.'</p>
-    
-                <p class="card-text">RM: '.$cd_rm_candidato6.'</p>
-                <p class="card-text">Nome: '.$nm_candidato_chapa6.'</p>
-                <p class="card-text">Turma: '.$nm_turma6.'</p>
-                <p class="card-text">Cargo desejado: '.$ds_cargo_gremio6.'</p>
-                <p class="card-text">Proposta: '.$ds_proposta6.'</p>
+                <p class="card-text"><b>RM:</b> '.$cd_rm_candidato5.'</p>
+                <p class="card-text"><b>Nome:</b> '.$nm_candidato_chapa5.'</p>
+                <p class="card-text"><b>Turma:</b> '.$nm_turma5.'</p>
+                <p class="card-text"><b>Cargo desejado:</b> '.$ds_cargo_gremio5.'</p>
+                <p class="card-text"><b>Proposta:</b> '.$ds_proposta5.'</p>
+                <hr>
+
+                <p class="card-text"><b>RM:</b> '.$cd_rm_candidato6.'</p>
+                <p class="card-text"><b>Nome:</b> '.$nm_candidato_chapa6.'</p>
+                <p class="card-text"><b>Turma:</b> '.$nm_turma6.'</p>
+                <p class="card-text"><b>Cargo desejado:</b> '.$ds_cargo_gremio6.'</p>
+                <p class="card-text"><b>Proposta:</b> '.$ds_proposta6.'</p>
+                
               </div>  
             </div>
 

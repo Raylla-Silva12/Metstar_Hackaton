@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$usuario = "lctsnhpu";
-$senha = "AllyarJosias12";
-$bd = "lctsnhpu_db_metstars";
+$usuario = "root";
+$senha = "usbw";
+$bd = "db_metstars";
 
 $mysqli = new mysqli($host, $usuario, $senha, $bd);
 

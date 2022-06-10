@@ -16,6 +16,17 @@ form {
     animation-name: fade;
     animation-duration: 1s;
 }
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] { 
+    -moz-appearance: textfield; 
+}
+
+
 
 @keyframes fade {
 from{
